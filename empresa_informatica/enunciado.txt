@@ -1,9 +1,0 @@
-nombre_empresa
-
-logo
-
-colores
-
-tipografia-titulos-parraos
-
-slogan-texto-servicios-contacto

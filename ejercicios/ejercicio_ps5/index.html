@@ -14,7 +14,7 @@
         h1, h2, h3 {
             color: #87CEEB;
         }
-        .container {
+        .contenedor {
             width: 90%;
             margin: auto;
             background-color: #fff;
@@ -24,11 +24,11 @@
             margin-top: 20px;
             color: #214578;
         }
-        .title, .section-title {
+        .titulo, .titulo-seccion {
             text-align: center;
             margin-top: 20px;
         }
-         .control-image, .game-image {
+        .imagen-control, .imagen-juego {
             display: block;
             margin: 20px auto;
             max-width: 100%;
@@ -36,11 +36,9 @@
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
-        .main-image {
-            margin-left: 10%;
-        }
-        .control-image {
-            width: 60%;
+        .imagen-principal {
+            margin-left: 11%;
+            width: 80%;
         }
         table {
             width: 100%;
@@ -59,7 +57,7 @@
             color: #333;
         }
         nav {
-            background-color: #1a2a47; /* Azul oscuro */
+            background-color: #1a2a47; 
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -74,10 +72,10 @@
             width: 13%;
         }
         nav a:hover {
-            background-color: #214578; /* Azul un poco más claro */
-            color: #fff; /* Blanco */
+            background-color: #214578; 
+            color: #fff; 
         }
-        .video-container {
+        .contenedor-video {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -94,19 +92,51 @@
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
+        .seccion-juegos {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .juego {
+            flex: 1;
+            text-align: center;
+            margin: 0 10px;
+        }
+        .juego img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .juego h3 {
+            margin-top: 10px;
+        }
+        #pdf {
+            width: 60%;
+            text-align: center;
+        }
+        .contenedor-pdf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        #pdf {
+            width: 60%; 
+            height: 80vh; 
+        }
     </style>
 </head>
 <body>
-
-
-    <div class="container">
+    <div class="contenedor">
         <header>
-            <h1 id="titulo" class="title">PlayStation 5</h1>
+            <h1 id="titulo" class="titulo">PlayStation 5</h1>
             <p>La PlayStation 5 (PS5) es una consola de videojuegos desarrollada por Sony Interactive Entertainment. Fue lanzada en noviembre de 2020 y ofrece una experiencia de juego de próxima generación con gráficos impresionantes y tiempos de carga ultra rápidos.</p>
             <br>
-            <img src="img/logo.png" alt="Foto principal de la PlayStation 5" class="main-image">
+            <img src="img/logo.png" alt="Logo de PlayStation 5" class="imagen-principal">
         </header>
-        <br><br><br>
+        <br><br>
         <nav>
             <a href="#titulo">Inicio</a>
             <a href="#historia">Historia</a>
@@ -115,14 +145,14 @@
             <a href="#video-presentacion">Video de Presentación</a>
             <a href="#manual-ps5">Manual PS5</a>
         </nav>
-        <br> <br>
+        <br><br>
         <section>
-            <h2 id="historia" class="section-title">Historia de la PS5</h2>
+            <h2 id="historia" class="titulo-seccion">Historia de la PS5</h2>
             <p>La PlayStation 5 fue anunciada oficialmente en 2019, y su lanzamiento en 2020 marcó una nueva era en la historia de las consolas de videojuegos. Con su potente hardware, soporte para trazado de rayos y una impresionante biblioteca de juegos, la PS5 ha establecido nuevos estándares en la industria.</p>
         </section>
-        <br> <br>
+        <br><br>
         <section>
-            <h2 id="catalogo-juegos" class="section-title">Catálogo de Juegos</h2>
+            <h2 id="catalogo-juegos" class="titulo-seccion">Catálogo de Juegos</h2>
             <table>
                 <thead>
                     <tr>
@@ -133,35 +163,52 @@
                 <tbody>
                     <tr>
                         <td>Normal</td>
-                        <td><img src="img/p1.jpg" alt="Portada del juego Demon's Souls" class="game-image"></td>
+                        <td><img src="img/p1.jpg" alt="Portada del juego Demon's Souls" class="imagen-juego"></td>
                     </tr>
                     <tr>
                         <td>Doble</td>
-                        <td><img src="img/p2.jpg" alt="Portada del juego Spider-Man: Miles Morales" class="game-image"></td>
+                        <td><img src="img/p2.jpg" alt="Portada del juego Spider-Man: Miles Morales" class="imagen-juego"></td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <br> <br>
+        <br><br>
         <section>
-            <h2 id="mando-control" class="section-title">Mando de Control</h2>
+            <h2 id="mando-control" class="titulo-seccion">Mando de Control</h2>
             <p>El mando DualSense de la PS5 ofrece una experiencia de juego innovadora con retroalimentación háptica y gatillos adaptativos. Esto permite a los jugadores sentir la acción de una manera más inmersiva y realista.</p>
-            <img src="img/mando.jpg" alt="Foto del mando DualSense de la PS5" class="control-image">
+            <img src="img/mando.jpg" alt="Foto del mando DualSense de la PS5" class="imagen-control">
         </section>
-        <br> <br>
+        <br><br>
+        <section class="seccion-juegos">
+            <div class="juego">
+                <h3>Juego 1</h3>
+                <img src="img/juegos/j1.jpg" alt="Imagen del juego 1">
+            </div>
+            <div class="juego">
+                <h3>Juego 2</h3>
+                <img src="img/juegos/j2.jpg" alt="Imagen del juego 2">
+            </div>
+            <div class="juego">
+                <h3>Juego 3</h3>
+                <img src="img/juegos/j3.jpg" alt="Imagen del juego 3">
+            </div>
+        </section>
+        <br><br>
         <section>
-            <h2 id="video-presentacion" class="section-title">Video de Presentación</h2>
-            <div class="video-container">
+            <h2 id="video-presentacion" class="titulo-seccion">Video de Presentación</h2>
+            <div class="contenedor-video">
                 <video width="640" height="480" controls>
                     <source src="video/PS5 Hardware Reveal Trailer.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta de video.
                 </video>
             </div>
         </section>
-        <br> <br>
+        <br><br>
         <section>
-            <h2 id="manual-ps5" class="section-title">Manual de la PS5</h2>
-            <embed src="pdf/documento.pdf" type="application/pdf">
+            <h2 id="manual-ps5" class="titulo-seccion">Manual de la PS5</h2>
+            <div class="contenedor-pdf">
+                <embed id="pdf" src="pdf/documento.pdf" type="application/pdf">
+            </div>
         </section>
     </div>
 </body>
