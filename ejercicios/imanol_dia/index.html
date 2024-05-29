@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Roboto,sans-serif;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .top-bar h1 {
+            color: #FF0000;
+            margin: 0;
+        }
+        .top-bar .search-bar {
+            margin-right: 1rem;
+        }
+        .top-bar .search-bar input {
+            flex: 1;
+            width: 90%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .top-bar .logo {
+            width: 100px;
+        }
+        header {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        .producto, .oferta {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .producto img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.5rem;
+        }
+        .cuatro-divs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .cuatro-divs div {
+            width: 24%;
+            background-color: #ddd;
+            border: 2px solid #FF0000;
+            border-radius: 15px;
+            padding: 1rem;
+            text-align: center;
+            margin-right: 5px;
+        }
+        .cuatro-divs div:last-child {
+            margin-right: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .search-bar {
+            width: 96%;
+            margin-left: 6%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        
+        <img src="img/logo_dia.png" alt="Logo Supermercado Dia" class="logo">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+      
+        <img src="img/menu.PNG" alt="Logo Supermercado Dia" class="logo-menu">
+       
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenido a Supermercado Online</h1>
+            <p>Recibe tu compra hoy mismo.</p>
+            <div class="cuatro-divs">
+                <div>
+                    <h3>Club Día</h3>
+                    <p>Descripción 1</p>
+                </div>
+                <div>
+                    <h3>Folletos</h3>
+                    <p>Descripción 2</p>
+                </div>
+                <div>
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                </div>
+                <div>
+                    <h3>Título 4</h3>
+                    <p>Descripción 4</p>
+                </div>
+            </div>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="producto">
+                <img src="https://www.dia.es/images/image1.jpg" alt="Producto 1">
+                <p>Producto 1 - 10€</p>
+            </div>
+        </section>
+        <section id="ofertas">
+            <h2>Ofertas</h2>
+            <div class="oferta">
+                <h3>Descuento en Frutas</h3>
+                <p>20% de descuento en todas las frutas frescas.</p>
+            </div>
+            <div class="oferta">
+                <h3>Ofertas en Lácteos</h3>
+                <p>Compra 2 y llévate 1 gratis en yogures seleccionados.</p>
+            </div>
+            <div class="oferta">
+                <h3>Descuento en Carnes</h3>
+                <p>15% de descuento en todas las carnes rojas.</p>
+            </div>
+            <div class="oferta">
+                <h3>Ofertas en Bebidas</h3>
+                <p>Hasta 30% de descuento en bebidas refrescantes.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Supermercado Online</p>
+    </footer>
+</body>
+</html>
