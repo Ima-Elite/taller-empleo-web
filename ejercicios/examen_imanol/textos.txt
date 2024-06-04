@@ -1,0 +1,29 @@
+
+1. Título de la Página: Tu nombre + "Sitio Web en Construcción - Coca-Cola". 
+
+
+2. Mensaje de Construcción: "¡Estamos trabajando para brindarte una mejor experiencia! Disculpa las molestias mientras preparamos algo refrescante para ti. ¡Vuelve pronto para descubrir lo nuevo de Coca-Cola!" 
+
+
+3. Texto Informativo: "¡Bienvenido a Coca-Cola! En nuestra página en construcción, estamos emocionados por lo que viene. En Coca-Cola, nos dedicamos a refrescar el mundo y hacer que los momentos sean aún más especiales. Mientras trabajamos en nuestra nueva página web, esperamos compartir contigo noticias emocionantes, historias inspiradoras y mucho más. ¡Estamos ansiosos por verte pronto!" 
+
+
+
+4. código hexadecimal del color rojo: #FF0000. 
+
+
+
+5. Lista de Servicios: 
+
+Refrescos Coca-Cola: Descubre nuestra variedad de refrescos, desde la icónica Coca-Cola Original hasta las opciones sin calorías como Coca-Cola Light y Coca-Cola Zero. 
+
+Bebidas de la marca: Explora nuestra gama de bebidas, incluyendo Fanta, Sprite, Aquarius y otras opciones refrescantes. 
+
+Productos relacionados: Encuentra productos relacionados, como botellas de agua Dasani, bebidas energéticas Monster, y jugos de frutas de la marca Minute Maid. 
+
+Promociones: Mantente al tanto de nuestras promociones actuales y próximas, que incluyen sorteos, concursos y descuentos exclusivos. 
+
+Historia de la marca: Sumérgete en la rica historia de Coca-Cola, desde sus humildes comienzos hasta convertirse en una de las marcas más reconocidas del mundo. 
+
+Compromiso social: Conoce nuestras iniciativas de responsabilidad social corporativa, como programas de reciclaje, proyectos comunitarios y apoyo a causas sociales.
+
