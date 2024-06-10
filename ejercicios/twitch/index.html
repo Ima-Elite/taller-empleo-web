@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitch Imanol</title>
+    <title>Twitch - Imanol</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,49 +11,81 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        header {
+
+        cabecera {
             background-color: #451093;
-            color: #fff;
-            padding: 20px;
+            color: white;
+            padding: 10px 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
         }
-        header img {
-            width: 70px;
+
+        .logotipo img {
+            height: 80px;
+            margin-right: 10px;
         }
-        .logo {
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
             margin-right: 20px;
         }
-        h1 {
-            font-size: 34px;
-            text-align: center;
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
         }
-        main {
+
+        principal {
             padding: 20px;
         }
+
         .parrafo-introduccion {
             font-family: 'Arial', sans-serif;
             font-size: 18px;
             color: #333;
         }
+
         .parrafo-destacado {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Verdana', sans-serif;
             font-size: 20px;
             color: #9146ff;
         }
+
         .parrafo-informacion {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', serif;
             font-size: 16px;
             color: #666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="img/logo/logo.png" alt="Logo de la página" class="logo">
-        <h1>Twitch</h1>
-    </header>
-    <main>
+    <cabecera>
+        <div class="logotipo">
+            <img src="img/logo/logo.png" alt="Logo de Twitch">
+        </div>
+        <h1>Twitch - Imanol</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Seguir</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </cabecera>
+    <principal>
         <section>
             <p class="parrafo-introduccion">
                 Este es un sitio web donde puedes ver transmisiones en vivo de diferentes creadores de contenido.
@@ -65,6 +97,6 @@
                 Únete a nuestra comunidad y comparte momentos emocionantes con otros espectadores.
             </p>
         </section>
-    </main>
+    </principal>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Imagen con Hover</title>
+    <style>
+        .contenedor-imagen {
+            width: 300px;
+            height: 200px;
+            background-image: url('coca.png');
+            background-size: cover;
+            border-radius: 5px;
+            transition-duration: 2s;
+            text-align: center;
+        }
+
+        .contenedor-imagen:hover {
+            background-image: url('coca2.png');
+            background-size: cover;
+            transition: background-image;
+            transition-duration: 2s;
+        }
+        .contenedor-imagen p { 
+
+            opacity: 0%;
+        }
+        .contenedor-imagen p:hover { 
+            color: white;
+            opacity: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor-imagen">
+
+        <p class="letra">
+            Hola
+
+        </p>
+
+    </div>
+</body>
+</html>

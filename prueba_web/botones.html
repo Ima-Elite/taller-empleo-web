@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Divs con Hover</title>
+    <style>
+        .hover-div {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .div-azul {
+            background-color: lightblue;
+            color: darkblue;
+        }
+
+        .div-azul:hover {
+            background-color: darkblue;
+            color: lightblue;
+        }
+
+        .div-verde {
+            background-color: lightgreen;
+            color: darkgreen;
+        }
+
+        .div-verde:hover {
+            background-color: darkgreen;
+            color: lightgreen;
+        }
+
+        .div-rojo {
+            background-color: lightcoral;
+            color: darkred;
+        }
+
+        .div-rojo:hover {
+            background-color: darkred;
+            color: lightcoral;
+        }
+
+        .div-amarillo {
+            background-color: lightyellow;
+            color: darkorange;
+        }
+
+        .div-amarillo:hover {
+            background-color: darkorange;
+            color: lightyellow;
+        }
+
+        .div-purpura {
+            background-color: thistle;
+            color: indigo;
+        }
+
+        .div-purpura:hover {
+            background-color: indigo;
+            color: thistle;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hover-div div-azul">Div Azul</div>
+    <div class="hover-div div-verde">Div Verde</div>
+    <div class="hover-div div-rojo">Div Rojo</div>
+    <div class="hover-div div-amarillo">Div Amarillo</div>
+    <div class="hover-div div-purpura">Div Púrpura</div>
+</body>
+</html>

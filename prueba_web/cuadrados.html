@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrados con Hover</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        .contenedor {
+            float:left;
+            display: flex;
+        }
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+        }
+        .cuadrado1 {
+            background-color: red;
+        }
+        .cuadrado2 {
+            background-color: green;
+        }
+        .cuadrado3 {
+            background-color: blue;
+        }
+        .cuadrado:hover {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+
+        <a href="https://www.marca.com/" target="_blank">
+             <div class="cuadrado cuadrado1"></div>
+        </a>
+
+        <a href="https://www.facebook.com/?locale=es_ES" target="_blank">
+             <div class="cuadrado cuadrado2"></div>
+        </a>
+
+        <a href="https://x.com/?lang=es" target="_blank">
+             <div class="cuadrado cuadrado3"></div>
+        </a>
+
+    </div>
+</body>
+</html>

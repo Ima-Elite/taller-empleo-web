@@ -13,7 +13,7 @@
             background-color: #f0f0f0;
         }
         .barra-navegacion {
-            background-color: #006341;
+            background-color: #047446;
             color: white;
             padding: 10px 20px;
             display: flex;
@@ -25,23 +25,46 @@
             border-radius: 5px;
         }
         .contenido-principal {
-            padding: 20px;
             text-align: center;
+			color: #047446;
         }
 
         .titulo-principal {
             font-family: 'Alike', serif;
             font-weight: 400;
             font-size: 50px;
-            color: black;
+            color:#047446;
         }
 
-        .texto-secundario, .texto-final {
+        .texto-secundario, .texto-final, .texto-alike {
             margin-top: 20px;
             font-size: 18px;
             color: #333;
         }
 
+        .texto-alike {
+            font-family: 'Alike', serif;
+        }
+
+        footer {
+            background-color: #047446;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .foto_fondo {
+            width: 90%;
+        }
+        .centrado{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .centrado img {
+            border-radius: 10px;
+        }
+		h2 {
+			text-align:center;
+		}
     </style>
 </head>
 <body>
@@ -51,17 +74,26 @@
             <h1>Starbucks</h1>
         </div>
     </div>
+    <div class="centrado">
+        <img class="foto_fondo" src="img/fondo.jpg">
+    </div>
+	      <h2>¡Bienvenidos a Starbucks Santander!</h2>
     <div class="contenido-principal">
-        <h2>¡Bienvenidos a Starbucks Santander!</h2>
         <p class="titulo-principal">
             Nos complace anunciar la apertura de nuestro nuevo café en la hermosa playa del Sardinero. A partir del próximo 10 de julio, podrás disfrutar de tu café favorito en un entorno único, con vistas espectaculares y el ambiente acogedor que caracteriza a Starbucks.
         </p>
         <p class="texto-secundario">
             Ven y descubre nuestra amplia selección de bebidas artesanales, deliciosos pasteles y snacks, perfectos para compartir con amigos o para un momento de relajación personal. Nos encanta ser parte de esta vibrante comunidad y esperamos brindarte una experiencia excepcional cada vez que nos visites.
         </p>
-        <p class="texto-final">
+        <p class="texto-alike">
             ¡Te esperamos en Starbucks Sardinero, donde cada taza de café es una oportunidad para crear momentos inolvidables!
         </p>
+        <p class="texto-alike">
+            Descubre el sabor auténtico de nuestras nuevas mezclas, preparadas con granos cuidadosamente seleccionados de las mejores plantaciones del mundo. En Starbucks, la calidad y el buen gusto son nuestra prioridad.
+        </p>
     </div>
+    <footer>
+        <p>&copy; 2024 Starbucks Imanol</p>
+    </footer>
 </body>
 </html>

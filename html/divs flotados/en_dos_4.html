@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs Anidados</title>
+    <style>
+        div {
+            height: 400px;
+        }
+        .container {
+            width: 100%;
+            overflow: hidden; /* Para contener los flotados */
+            height: 500px;
+        }
+        .left, .right {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; /* Para incluir padding y borde en el ancho */
+            padding: 10px;
+        }
+        .left {
+            background-color: lightblue;
+        }
+        .right {
+            background-color: lightcoral;
+        }
+        .inner-left, .inner-right {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; /* Para incluir padding y borde en el ancho */
+            padding: 10px;
+        }
+        .inner-left {
+            background-color: lightgreen;
+        }
+        .inner-right {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="inner-left">
+                Contenido del div interno izquierdo.
+            </div>
+            <div class="inner-right">
+                Contenido del div interno derecho.
+            </div>
+        </div>
+        <div class="right">
+            <div class="inner-left">
+                Contenido del div interno izquierdo.
+            </div>
+            <div class="inner-right">
+                Contenido del div interno derecho.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
