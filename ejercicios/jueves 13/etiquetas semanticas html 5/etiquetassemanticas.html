@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de HTML Semántico</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #add8e6;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #ffcccb;
+  padding: 20px;
+  text-align: center;
+}
+
+nav h2 {
+  margin: 0 0 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+section {
+  display: flex;
+  background-color: #ffffe0;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+aside {
+  background-color: #ffffe0;
+  padding: 10px;
+  width: 25%;
+  margin-right: 20px;
+}
+
+main {
+  background-color: #ffffe0;
+  padding: 20px;
+  width: 75%;
+}
+
+article {
+  background-color: #ffffe0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article header {
+  background-color: #98fb98;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+figure {
+  background-color: #f0e68c;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+article footer {
+  background-color: #dda0dd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #e0ffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+    <p>Esta área está definida para el encabezado, contiene elementos introductorios y de navegación.</p>
+  </header>
+
+  <nav>
+    <h2>Nav</h2>
+    <p>Esta área está definida para enlaces de navegación.</p>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Acerca de</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <aside>
+      <h3>Aside</h3>
+      <p>Esta área está definida para contenido relacionado tangencialmente con el contenido principal, como artículos relacionados o anuncios.</p>
+      <ul>
+        <li><a href="#article1">Artículo 1</a></li>
+        <li><a href="#article2">Artículo 2</a></li>
+      </ul>
+    </aside>
+    
+    <main>
+      <h2>Main</h2>
+      <p>Esta área está definida para el contenido principal del documento.</p>
+      <article>
+        <header>
+          <h3>Header del Artículo</h3>
+        </header>
+        <figure>
+          <img src="image.jpg" alt="Descripción de la imagen">
+          <figcaption>Descripción de la imagen</figcaption>
+        </figure>
+        <p>Esta área está definida para el contenido del artículo.</p>
+        <footer>
+          <p>Footer del Artículo</p>
+        </footer>
+      </article>
+      <section>
+        <h2>Section</h2>
+        <p>Esta área está definida para una sección principal dentro del contenido del artículo.</p>
+      </section>
+    </main>
+  </section>
+
+  <footer>
+    <h2>Footer</h2>
+    <p>Esta área está definida para el pie de página, contiene información adicional como enlaces y derechos de autor.</p>
+    <nav>
+      <ul>
+        <li><a href="#privacy">Política de Privacidad</a></li>
+        <li><a href="#terms">Términos de Servicio</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

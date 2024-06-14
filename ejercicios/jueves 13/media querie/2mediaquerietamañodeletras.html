@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries para Tamaños de Texto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+    }
+    
+    h2 {
+      font-size: 2em;
+    }
+    
+    p {
+      font-size: 1em;
+    }
+    
+    /* Media query para dispositivos con ancho máximo de 600px */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+      
+      p {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Título Principal</h1>
+  
+  <h2>Subtítulo</h2>
+  
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur, risus non sodales maximus, magna orci varius velit, at varius risus mi sit amet lectus.
+  </p>
+  
+  <p>
+    Maecenas auctor sapien a lacinia condimentum. Nulla facilisi. Aenean vehicula, eros eu convallis consequat, lorem purus sodales magna, vitae vestibulum urna est sit amet libero.
+  </p>
+</body>
+</html>

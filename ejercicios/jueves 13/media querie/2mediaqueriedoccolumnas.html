@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsive sin Grid</title>
+  <style>
+    .columna1, .columna2 {
+      box-sizing: border-box;
+      padding: 20px;
+      float: left;
+      width: 50%;
+    }
+    
+    .columna1 {
+      background-color: #f0f0f0;
+    }
+    
+    .columna2 {
+      background-color: #e0e0e0;
+    }
+    
+    /* Media query para dispositivos con ancho máximo de 600px */
+    @media screen and (max-width: 600px) {
+      .columna1, .columna2 {
+        width: 100%;
+        float: none; /* Cancelar el float para que las columnas se muestren una debajo de la otra */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="columna1">
+    Contenido de la columna 1
+  </div>
+  <div class="columna2">
+    Contenido de la columna 2
+  </div>
+</body>
+</html>
