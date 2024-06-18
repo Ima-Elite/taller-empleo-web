@@ -1,0 +1,279 @@
+/*Limpiador de Código*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FIN DE RESET*/
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #E8E6E7;
+    }
+    header {
+        background-color: #3D314A;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    nav {
+        background-color: #354ea0;
+        padding: 10px;
+        text-align: center;
+        margin-top: 5px;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom-left-radius: 7px; 
+        border-bottom-right-radius: 7px; 
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+    }
+    nav a:hover{
+        background-color:#2b76e5;
+        transition: 1s;
+        border-radius: 5px;
+    }
+    .box {
+        float: left;
+        color: #0a1d3a;
+        width: 20%;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 5px;
+    }
+    .box p {
+        margin-bottom: 25px;
+        color: #0a1d3a;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    main {
+        text-align: center;
+        font-weight: bold;
+        background-color:#354ea0;
+        color: white;
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        border-radius: 5px;
+        padding: 20px;
+        padding-bottom: 35px;
+    }
+    main img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    footer {
+        text-align: center;
+        font-weight: bold;
+        height: 50px;
+        background-color: #3D314A;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer h6 {
+        margin: 0;
+    }
+    .box img {
+        height: auto;
+        border-radius: 5px;
+        width: 90%;
+        height: 200px;
+        border: 1px solid #3D314A;
+    }
+    .padre{
+        float: left;
+        width: 100%;
+    }
+    .box img {
+        transition: border-color 0.5s ease;
+    }
+    .box img:hover{
+        border: 2px solid white;
+        width: 94%;
+        transition: 1s;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .bici_logo {
+        width: 4%;
+        margin-right: 2%;
+    }
+    .imagen-principal{
+        border: 1px solid #3D314A;
+        height: 600px;
+        float: left;
+        background-image: url('img/producto2.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 10%;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        
+    }
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 47px;
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+    }
+    h2{
+        font-size: 39px;
+    }
+    h3{
+        font-size: 33px;
+    }
+    h4{
+        font-size: 27px;
+    }
+    h1,h2,h3,h4{
+        color: #e5eefc;
+    }
+    body {
+        background-color: #84a2d0;
+    }
+    p{
+        color: #0a1d3a;
+    }
+    /*ESTRUCTURA*/
+    footer{
+        background-color: #0a1d3a;
+        padding: 5px;
+    }
+    header{
+        background-color: #0a1d3a;
+    }
+    .box ul li {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .titulo_menu {
+        color: white!important;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    /*venjatas*/
+    .ventajas {
+        margin-left: 150px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .ventajas p {
+        color: white;
+        margin-top: 20px;
+    }
+    .nuestros_productos{
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    main p {
+        color: white;
+        font-size: 15px;
+    }
+    .contacto{
+        margin-left: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        float: left;
+    }
+    .contacto h3{
+        margin-bottom: 30px;
+    }
+    .contacto li {
+        margin-top: 25px;
+    }
+    .nuestra_historia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nuestra_historia span{
+        color: hsl(56, 100%, 50%);
+    }
+    .invisible {
+        opacity: 0;
+    }
+    .mapa_contacto{
+        float: left;
+        width: 746px;
+        height: 301px;
+        background-image: url('img/mapa.PNG'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        margin-left: 10%;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        border: 1px solid #0a1d3a;
+    }
+    .imanol{
+        color: hsl(56, 100%, 50%);
+    }
