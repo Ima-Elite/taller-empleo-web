@@ -1,0 +1,22 @@
+- carpeta: martes_18
+
+- Nombre de la base de datos:
+martes_18
+
+- Usuario de la base de datos:
+root
+
+- Contraseña de la base de datos:
+
+- Servidor de la base de datos:
+
+- WP
+
+usuario:
+imanol_elite
+
+contra:
+q%S%IOIxsZ(z$DnCA*
+
+correo:
+ima7654elite@hotmail.com

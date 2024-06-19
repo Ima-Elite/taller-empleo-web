@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Océanos - Imanol</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            /*Limpiador de Código*/
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Estilos generales */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .titulos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+		
+        }
+
+        .titulos h1 {
+            color: aliceblue;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        .dos_columnas {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .col-izq, .col-drch {
+            border-radius: 5px;
+            flex: 1;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border: 1px white solid;
+        }
+
+        .col-izq {
+            background-image: url('img/DM-oceanos-1.png');
+        }
+
+        .col-drch {
+            background-image: url('img/oceanos2.jpg');
+        }
+
+        .descripcion {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .descripcion p {
+            flex: 1;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        .titulosderecha {
+            color:blue;
+        }
+		div {
+			margin:10px;
+		}
+        .titulosderecha, .titulosizquierda {
+            width: 50%;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="titulos">
+        <div class="titulosizquierda">
+            <h1>El Océano Atlántico</h1>
+        </div>
+        <div class="titulosderecha">
+            <h1>El Océano Pacífico</h1>
+        </div>
+    </div>
+
+    <div class="dos_columnas">
+        <div class="col-izq"></div>
+        <div class="col-drch"></div>
+    </div>
+
+    <div class="descripcion">
+        <div class="titulosizquierda">
+            <p>El océano Atlántico es el segundo más grande, separado de América por el oeste y Europa y África por el este.</p>
+        </div>
+        <div class="titulosderecha">
+            <p>El océano Pacífico es el más grande y profundo del mundo, cubriendo más de 63 millones de millas cuadradas.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
