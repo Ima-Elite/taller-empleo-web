@@ -1,0 +1,17 @@
+*Tipografías: (Fontpair)
+
+- Titulos.
+
+- Párrafos.
+
+* Colores:
+
+- Fondo: Azul Claro
+
+- Colores Titulados: Oscuro
+
+- Colores Párrafo: Oscuro
+
+* Formato Cabecera:
+
+- Tiene Logo?
