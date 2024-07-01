@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+
+/*Limpiador de Código*/
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            width: 25%;
+            
+            padding: 80px;
+            border-radius: 8px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            margin-bottom: 25px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .enviar {
+            display: block;
+            float: inline-end;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .enviar:hover {
+            background-color: #0056b3;
+        }
+        .foto{
+            max-width: 100px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        .foto_a{
+            width: 12px;
+        }
+        #remeber{
+             margin-top: 14px;
+             margin-bottom: 50px;
+        }
+        .formulario_fondo{
+            background-color: #fff;
+            padding: 45px;
+            border-radius: 10px;
+            border: 0.5px saddlebrown solid;
+        }
+        #idiomas {
+              width: 200px; /* Ajusta el ancho aquí */
+            background-color: white; /* Fondo blanco */
+            padding: 5px; /* Espaciado interno */
+            border: 1px solid #ccc; /* Borde */
+            border-radius: 4px; /* Bordes redondeados */
+            margin-right: 10px;
+        }
+        p{
+            display: block;
+            margin-bottom: 21px;
+            margin-top: 21px;
+        }
+        #recuerdame{
+            margin-top: 10px;
+        }
+        #remember_checkbox{
+             margin-top: 12px;
+             margin-bottom: 10px;
+        }
+        .cambiar {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="WordPress_blue_logo.svg.png" class="foto">
+
+        <div class="formulario_fondo">
+            <form action="/login" method="POST">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div id="recuerdame">
+                    <input type="checkbox" id="remember_checkbox" name="remember">
+                    <label for="remember" class="recuerdame">Recuérdame</label>
+                    <button type="submit" class="enviar">Enviar</button>
+                </div>
+                
+              
+            </form>
+        </div>
+            <p>¿Has olvidado tu contraseña?</p>
+            <div class="container">
+                <label for="idiomas">
+                    <img src="carta-a.png" class="foto_a">
+
+                </label>
+                <select id="idiomas" name="idiomas">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                </select>
+                <button type="submit" class="cambiar">Cambiar</button>
+
+             </div>
+        
+    </div>
+    
+</body>
+</html>

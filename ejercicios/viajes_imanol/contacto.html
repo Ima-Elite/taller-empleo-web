@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .centered-container {
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"] {
+            text-align: left;
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .enviar{
+            width: 20%;
+            margin: 0 auto;
+            margin-top: 26px;
+        }
+        .menu_radios{
+            width: 60%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        footer p {
+            font-weight: bold;
+        }
+        header a {
+            font-weight: bold;
+        }
+        .negrita{
+            font-weight: bold;
+        }
+        h4{
+            color: #0056b3;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="enlace_logo">
+                        <img src="img/logo_redondo.png" alt="Imagen del destino turístico" class="logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destino.html">Destino</a></li>
+                <li><a href="alojamiento.html">Alojamiento</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="centered-container">
+            <div class="form-container">
+                <h2>Formulario</h2>
+                <br>
+                <h4>
+                    Datos Personales
+                </h4>
+                <br>
+                <form>
+                    <div class="form-group">
+                       
+                        <label for="nombre" class="negrita">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellidos" class="negrita">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="negrita">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="negrita">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <br>
+
+                    <h4>
+                        Datos Habitacionales
+                    </h4>
+
+                    <br>
+
+                    <div class="menu_radios">
+
+                        <label for="fechas" class="negrita">Fechas (Fechas en las que está interesado en hacer el viaje):</label>
+                        <input type="date" id="fechas" name="fechas"><br><br>
+                
+                        <label class="negrita">¿Quiere alojamiento?</label>
+                        <input type="radio" id="alojamiento_si" name="alojamiento" value="si">
+                        <label for="alojamiento_si">Sí</label>
+                        <input type="radio" id="alojamiento_no" name="alojamiento" value="no">
+                        <label for="alojamiento_no">No</label><br><br>
+                
+                        <label for="personas" class="negrita">En caso de querer alojamiento, ¿para cuántas personas?</label>
+                        <input type="number" id="personas" name="personas" min="1"><br><br>
+                
+                        <label class="negrita">¿Viaja con niños?</label>
+                        <input type="radio" id="ninos_si" name="ninos" value="si">
+                        <label for="ninos_si">Sí</label>
+                        <input type="radio" id="ninos_no" name="ninos" value="no">
+                        <label for="ninos_no">No</label><br><br>
+                
+                        <label class="negrita">¿Viaja con ancianos?</label>
+                        <input type="radio" id="ancianos_si" name="ancianos" value="si">
+                        <label for="ancianos_si">Sí</label>
+                        <input type="radio" id="ancianos_no" name="ancianos" value="no">
+                        <label for="ancianos_no">No</label><br><br>
+                
+                        <label class="negrita">¿Viaja con mascotas?</label>
+                        <input type="radio" id="mascotas_si" name="mascotas" value="si">
+                        <label for="mascotas_si">Sí</label>
+                        <input type="radio" id="mascotas_no" name="mascotas" value="no">
+                        <label for="mascotas_no">No</label><br><br>
+
+                        <label for="idioma" class="negrita">Seleccione su idioma:</label>
+                        <select id="idioma" name="idioma">
+                            <option value="espanol">Español</option>
+                            <option value="ingles">Inglés</option>
+                            <option value="frances">Francés</option>
+                            <option value="aleman">Alemán</option>
+                            <option value="italiano">Italiano</option>
+                            <option value="portugues">Portugués</option>
+                            <option value="chino">Chino</option>
+                            <option value="japones">Japonés</option>
+                            <option value="ruso">Ruso</option>
+                        </select><br><br>
+                
+                    </div>
+
+                    <br>
+
+                    <div>
+                        
+                        <label for="consentir">
+                            <input type="checkbox" id="consentir" name="consentir" required>
+                            Consiento el uso de mis datos para procesar su oferta
+                        </label>
+                    </div>
+
+                    <div class="form-group enviar">
+                        <button type="submit">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>
+            Pie de Turquía
+        </p>
+    </footer>
+</body>
+</html>
