@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Estética</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      
+        #contact-form-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-form {
+            width: 80%;
+            max-width: 600px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact-form input, 
+        #contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact-form .form-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #contact-form .form-buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: rgb(248, 196, 99);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form .form-buttons button:hover {
+            background-color: rgb(250, 210, 135);
+        }
+
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        ul{
+            margin-left: -20%;
+            margin-top: -1%;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+            <h1>Centro de Estética Imanol</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="dondeestamos.html">Dónde Estamos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Donde estamos</h2>
+        <section id="contact-form-section" class="info-section">
+          
+
+            <ul>
+                <li>Nombre: Juan Pérez</li>
+                <li>Edad: 30 años</li>
+                <li>Dirección: Calle Falsa 123, Ciudad Inventada</li>
+                <li>Teléfono: 555-1234</li>
+                <li>Email: juan.perez@example.com</li>
+            </ul>
+        </section>
+        
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11584.385618763063!2d-3.846486868019929!3d43.45858449433323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd49497cbdc43371%3A0x4bb6c2bdd3e7dbcc!2sMuseo%20del%20Ciclismo%20Santiago%20Revuelta!5e0!3m2!1ses!2ses!4v1722410942510!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Centro de Estética. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

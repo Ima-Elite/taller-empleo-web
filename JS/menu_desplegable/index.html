@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #logo-container {
+            width: 100%;
+            background-color: #444;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #logo {
+            width: 100px;
+            height: auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        nav ul li .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        nav ul li .submenu li {
+            border-bottom: 1px solid #555;
+        }
+
+        nav ul li .submenu li a {
+            padding: 10px;
+            color: white;
+            display: block;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .container {
+            width: 30%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        #container1 {
+            background-color: #f44336;
+            height: 500px;
+        }
+
+        #container2 {
+            background-color: #4caf50;
+            height: 500px;
+        }
+
+        #container3 {
+            background-color: #2196f3;
+            height: 500px;
+        }
+
+        footer {
+            margin-top: 100px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo-container">
+        <img id="logo" src="https://via.placeholder.com/100" alt="Logo">
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li class="menu-item"><a href="#">Opción 1</a>
+                    <ul class="submenu">
+                        <li><a href="#">Subopción 1-1</a></li>
+                        <li><a href="#">Subopción 1-2</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Opción 2</a>
+                    <ul class="submenu">
+                        <li><a href="#">Subopción 2-1</a></li>
+                        <li><a href="#">Subopción 2-2</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Opción 3</a>
+                    <ul class="submenu">
+                        <li><a href="#">Subopción 3-1</a></li>
+                        <li><a href="#">Subopción 3-2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="container1">Contenedor 1</div>
+        <div class="container" id="container2">Contenedor 2</div>
+        <div class="container" id="container3">Contenedor 3</div>
+    </main>
+    <footer>
+        Pie de página
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuItems = document.querySelectorAll('.menu-item');
+
+            menuItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var submenu = this.querySelector('.submenu');
+                    submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.menu-item')) {
+                    menuItems.forEach(function(item) {
+                        var submenu = item.querySelector('.submenu');
+                        submenu.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

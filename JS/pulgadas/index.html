@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de cm a pulgadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #a6c0fe, #f68084);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .converter {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        p.result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="converter">
+        <h1>Convertidor de cm a pulgadas</h1>
+        <input type="number" id="cmInput" placeholder="Ingresa cm">
+        <button onclick="convertir()">Convertir</button>
+        <p class="result" id="result"></p>
+    </div>
+
+    <script>
+        function convertir() {
+            const cm = document.getElementById('cmInput').value;
+            const pulgadas = cm / 2.54;
+            document.getElementById('result').innerText = `${cm} cm son ${pulgadas.toFixed(2)} pulgadas`;
+        }
+    </script>
+</body>
+</html>

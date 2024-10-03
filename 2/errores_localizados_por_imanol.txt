@@ -1,0 +1,16 @@
+
+1. Añadido el DOCTYPE al inicio de los documentos.
+
+2. Corregido el cierre de etiquetas: <p a </p>.
+
+3. Corregidos los atributos: añadido comillas donde faltaban.
+
+4. Corregidas las rutas de las imágenes y enlaces: cambiadas las barras invertidas por barras diagonales.
+
+5. Eliminadas etiquetas <font> y reemplazadas con CSS.
+
+6. Organización y limpieza del código: uso de CSS en lugar de atributos de estilo en línea para mejor legibilidad.
+
+7. Cambiada ruta absoluta de la imagen. 
+
+8. ruta absoluta de los enlaces Cambiada.

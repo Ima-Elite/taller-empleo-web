@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Puerta con Contraseña</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .puerta {
+            width: 200px;
+            height: 400px;
+            background-color: brown;
+            border: 2px solid #000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: transform 0.5s;
+        }
+        .puerta.abierta {
+            transform: rotateY(90deg);
+        }
+        .puerta::before {
+            content: "";
+            width: 40px;
+            height: 80px;
+            background-color: #8b4513;
+            border: 2px solid #000;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+        }
+        .puerta::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: gold;
+            border: 2px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            bottom: 50px;
+        }
+        .boton {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        // Definimos la contraseña correcta
+        const passwordCorrecta = "1234";
+        let intentos = 0;
+        const maxIntentos = 3;
+        
+        function abrirPuerta() {
+            while (intentos < maxIntentos) {
+                // Solicitamos la contraseña al usuario
+                const passwordIngresada = prompt("Introduce la contraseña para abrir la puerta:");
+                
+                if (passwordIngresada === null) {
+                    // Si el usuario cancela el prompt, salimos del bucle
+                    return;
+                }
+                
+                if (passwordIngresada === passwordCorrecta) {
+                    alert("¡Puerta abierta!");
+                    document.querySelector('.puerta').classList.add('abierta');
+                    return; // Salimos de la función si la contraseña es correcta
+                } else {
+                    intentos++;
+                    alert(`Contraseña incorrecta. Te quedan ${maxIntentos - intentos} intentos.`);
+                }
+            }
+            
+            // Si llegamos aquí, es porque se fallaron los 3 intentos
+            alert("Puerta bloqueada. Has fallado 3 veces.");
+        }
+    </script>
+</head>
+<body>
+    <div class="puerta">
+        <button class="boton" onclick="abrirPuerta()">Abrir Puerta</button>
+    </div>
+</body>
+</html>

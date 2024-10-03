@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre el concepto de las vacaciones.">
+    <title>Concepto de Vacaciones</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar {
+            background-color: #e0ffff;
+            padding: 10px;
+            margin: 10px;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-container {
+            background-color: #e6e6fa;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-bottom: 5px;
+        }
+        .form-container input,
+        .form-container textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vacaciones Inolvidables</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#historia">Historia del Turismo</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenidos a nuestra guía de vacaciones</h2>
+            <p>Descubre los mejores destinos y consejos para unas vacaciones perfectas.</p>
+            <div class="img-container">
+                <img src="img/foto.jpg" alt="Foto de vacaciones" width="100%">
+                <img src="img/beach.jpg" alt="Playa paradisíaca">
+            </div>
+        </section>
+
+        <section id="destinos">
+            <h2>Destinos Populares</h2>
+            <p>Explora los destinos más populares del mundo para tus próximas vacaciones.</p>
+            <div class="columns">
+                <div class="column">
+                    <h3>Maldivas</h3>
+                    <p>Conocidas por sus playas de arena blanca y aguas cristalinas.</p>
+                    <img src="img/maldivas.jpg" alt="Maldivas">
+                </div>
+                <div class="column">
+                    <h3>Hawái</h3>
+                    <p>Un paraíso tropical con volcanes activos y exuberante naturaleza.</p>
+                    <img src="img/hawaii.jpg" alt="Hawái">
+                </div>
+                <div class="column">
+                    <h3>Bali</h3>
+                    <p>Una isla indonesia famosa por sus templos, arrozales y playas.</p>
+                    <img src="img/bali.jpg" alt="Bali">
+                </div>
+                <div class="column">
+                    <h3>París</h3>
+                    <p>La ciudad del amor, conocida por su cultura, moda y arquitectura.</p>
+                    <img src="img/paris.jpg" alt="París">
+                </div>
+            </div>
+        </section>
+
+        <section id="historia">
+            <h2>Historia del Turismo</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>Origen del Turismo</h3>
+                    <p>El turismo tiene sus raíces en las peregrinaciones religiosas de la antigüedad.</p>
+                    <p>Durante la Edad Media, las personas viajaban a lugares sagrados.</p>
+                </div>
+                <div class="column">
+                    <h3>Siglo XIX</h3>
+                    <p>El turismo moderno comenzó en el siglo XIX con la Revolución Industrial.</p>
+                    <p>El transporte ferroviario hizo que los viajes fueran más accesibles.</p>
+                </div>
+                <div class="column">
+                    <h3>Siglo XX</h3>
+                    <p>El auge de la aviación comercial revolucionó el turismo global.</p>
+                    <p>Las vacaciones pagadas se hicieron más comunes, permitiendo a más personas viajar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="consejos">
+            <h2>Consejos para viajar</h2>
+            <p>Sigue estos consejos para asegurarte de tener unas vacaciones seguras y agradables.</p>
+            <ul>
+                <li>Planifica con antelación</li>
+                <li>Mantén tus documentos seguros</li>
+                <li>Investiga sobre tu destino</li>
+                <li>Empaca inteligentemente</li>
+            </ul>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Recursos Adicionales</h2>
+            <ul>
+                <li><a href="https://www.tripadvisor.com">TripAdvisor</a></li>
+                <li><a href="https://www.lonelyplanet.com">Lonely Planet</a></li>
+                <li><a href="https://www.travelclub.es/">Travel Club</a></li>
+            </ul>
+        </aside>
+
+        <section class="form-container">
+            <h2>¿Deseas contactar con nosotros?</h2>
+            <form action="send_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" name="phone">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vacaciones Inolvidables. Todos los derechos reservados.</p>
+        <p>Contacta con nosotros en <a href="mailto:info@vacaciones.com">info@vacaciones.com</a></p>
+        <a href="https://twitter.com/vacaciones">Síguenos en Twitter</a>
+    </footer>
+</body>
+</html>

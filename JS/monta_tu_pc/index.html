@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Componentes de PC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #e0f7fa;
+        }
+
+        header, footer {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 1em 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 40%; /* Aumentado el ancho del contenedor para más espacio */
+            max-width: 1200px; /* Asegura que el contenedor no se haga demasiado ancho */
+        }
+
+        .container img {
+            max-width: 100%; /* Asegura que la imagen ocupa todo el ancho disponible del contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-right: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%; /* Asegura que el formulario ocupa todo el ancho del contenedor */
+        }
+
+        form label {
+            margin-bottom: 8px;
+            color: #0288d1;
+        }
+
+        form select, form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #0288d1;
+            border-radius: 4px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0277bd;
+        }
+
+        .price {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .totalPrice {
+            color: #d32f2f; /* Rojo para el precio total sin descuento */
+        }
+
+        .discountedPrice {
+            color: #0288d1; /* Azul para el precio total con descuento */
+        }
+
+        .priceNumber {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Compra de Componentes de PC</h1>
+    </header>
+    <main>
+        <div class="container">
+            <img src="pc.jpg" alt="Imagen de PC">
+            <form id="componentForm">
+                <label for="motherboard">Placa Base:</label>
+                <select id="motherboard" aria-label="Seleccionar placa base">
+                    <option value="100">Opción 1 - 100€</option>
+                    <option value="150">Opción 2 - 150€</option>
+                    <option value="200">Opción 3 - 200€</option>
+                </select>
+
+                <label for="powerSupply">Fuente de Poder:</label>
+                <select id="powerSupply" aria-label="Seleccionar fuente de poder">
+                    <option value="50">Opción 1 - 50€</option>
+                    <option value="75">Opción 2 - 75€</option>
+                    <option value="100">Opción 3 - 100€</option>
+                </select>
+
+                <label for="graphicsCard">Tarjeta Gráfica:</label>
+                <select id="graphicsCard" aria-label="Seleccionar tarjeta gráfica">
+                    <option value="200">Opción 1 - 200€</option>
+                    <option value="300">Opción 2 - 300€</option>
+                    <option value="400">Opción 3 - 400€</option>
+                </select>
+
+                <label for="processor">Procesador:</label>
+                <select id="processor" aria-label="Seleccionar procesador">
+                    <option value="150">Opción 1 - 150€</option>
+                    <option value="250">Opción 2 - 250€</option>
+                    <option value="350">Opción 3 - 350€</option>
+                </select>
+
+                <label for="discount">Descuento (%):</label>
+                <input type="number" id="discount" placeholder="Ingrese porcentaje de descuento" min="0" max="100">
+
+                <button type="button" onclick="calculateTotal()">Comprar</button>
+                <div id="totalPrice" class="price totalPrice">&nbsp;</div>
+                <div id="discountedPrice" class="price discountedPrice">&nbsp;</div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Compra de Componentes de PC</p>
+    </footer>
+    <script>
+        function calculateTotal() {
+            const motherboardPrice = parseFloat(document.getElementById('motherboard').value);
+            const powerSupplyPrice = parseFloat(document.getElementById('powerSupply').value);
+            const graphicsCardPrice = parseFloat(document.getElementById('graphicsCard').value);
+            const processorPrice = parseFloat(document.getElementById('processor').value);
+            const discountPercentage = parseFloat(document.getElementById('discount').value) || 0;
+
+            if (!motherboardPrice || !powerSupplyPrice || !graphicsCardPrice || !processorPrice) {
+                alert('Por favor, seleccione una opción para cada componente.');
+                return;
+            }
+
+            const totalPrice = motherboardPrice + powerSupplyPrice + graphicsCardPrice + processorPrice;
+
+            document.getElementById('totalPrice').innerHTML = `Precio Total sin Descuento: <span class="priceNumber">${totalPrice.toFixed(2)}€</span>`;
+
+            if (discountPercentage > 0) {
+                const discountAmount = (totalPrice * discountPercentage) / 100;
+                const discountedPrice = totalPrice - discountAmount;
+                document.getElementById('discountedPrice').innerHTML = `Precio Total con Descuento: <span class="priceNumber">${discountedPrice.toFixed(2)}€</span>`;
+            } else {
+                document.getElementById('discountedPrice').innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>

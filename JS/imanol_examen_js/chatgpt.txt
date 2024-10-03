@@ -1,0 +1,15 @@
+
+Deseo añadir funcionalidad con js a un formulario en html
+
+este formulario es de la carta de un restaurante y posee varios platos.
+
+Cada plato tiene un precio y dos inputs: un checkbox para seleccionarlo o no, y un input nombre para seleccionar la cantidad de cada plato.
+
+* deseo calcular dinámicamente el precio total de todos los platos y mostrarlo abajo del formulario en un div
+
+Hay que multiplicar el precio de cada plato elegido con el chechbox por la cantidad seleccionada en los inputs.
+
+te paso mi código html para que lo adaptes:
+
+
+

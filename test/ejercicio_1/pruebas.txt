@@ -1,0 +1,47 @@
+https://www.diablo2latino.com/
+
+TEST 1: COMPATIBILIDAD CON NAVEGADORES:
+
+a) CHROME: Se ve bien
+b) FIREFOX: Se ve bien
+c) MS EDGE: Algunas imágenes no cargan
+d) OPERA: Se ve bien
+e) BRAVE: Los vídeos no se reproducen
+
+TEST 2: COMPATIBILIDAD CON DISPOSITIVOS MÓVILES:
+
+ANDROID ESTÁNDAR: 6 pulgadas
+TABLET PEQUEÑA: 7 pulgadas
+TABLET NORMAL: 9.7 pulgadas
+TABLET GRANDE: 12.9 pulgadas
+
+IPHONE
+IPHONE VIEJO
+IPAD
+IPAD PRO
+
+En móvil, el menú se ve mal!!!
+
+TEST 3: COMPATIBILIDAD CON SISTEMAS OPERATIVOS:
+
+Todos bien, con sus matices.
+
+TEST 4: RESOLUCIONES DE PANTALLA:
+
+Evaluar el rendimiento de la página y la legibilidad de sus fuentes y elementos en diferentes resoluciones de pantalla. Para ello, podemos usar el programa Responsively (https://responsively.app/), las Chrome DevTools (a las que accederemos desde el inspector de Chrome), o un simulador móvil con extensión de Chrome.
+
+TEST 5: RENDIMIENTO CON DIFERENTES VELOCIDADES DE CONEXIÓN:
+
+Muy lenta: Carga muy mal. No es usable. (12 min)
+
+Lenta: Carga mal. (6 min)
+
+Normal: Tarda en cargar pero es usable (3 min)
+
+Rápida: Bien
+
+Muy rápida: Carga instantáneamente
+
+
+
+

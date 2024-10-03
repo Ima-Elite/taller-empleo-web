@@ -1,0 +1,17 @@
+
+Para una página html sobre reformas del hogar:
+
+Deseo añadir funcionalidad a su formulario con js 
+
+este formulario es de la oferta de servicios de la empresa y posee varios opciones.
+
+Cada servicio tiene un precio y dos inputs: un checkbox para seleccionarlo o no, y un input number para seleccionar la cantidad de cada servicio.
+
+* deseo calcular dinámicamente el precio total de todos los servicio y mostrarlo abajo del formulario en un div
+
+Hay que multiplicar el precio de cada servicio elegido con el chechbox por la cantidad seleccionada en los inputs.
+
+te paso mi código html para que lo adaptes:
+
+
+

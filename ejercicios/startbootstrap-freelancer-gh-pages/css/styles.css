@@ -11058,13 +11058,15 @@ header{
   color: #343a40;
 }
 #cabecera{
-  
-  background-image: url('assets/img/portfolio/ima_camino_2.jpg') !important;
+  background-image: url('camino.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  height: 1300px;
+
 }
 header p {
   margin-top: 50px;
+}
+.cabecera-h1 {
+  color: white !important;
 }

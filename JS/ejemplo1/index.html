@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recoger Nombres de Jugadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nombres de Jugadores</h1>
+    <p>Haga clic en el botón para comenzar:</p>
+    <button onclick="askToCollectNames()">Comenzar</button>
+    <p id="result"></p>
+
+    <script>
+        function askToCollectNames() {
+            const shouldCollectNames = confirm('¿Desea introducir los nombres de los jugadores?');
+            
+            if (shouldCollectNames) {
+                collectNames();
+            } else {
+                document.getElementById('result').innerText = 'No se han introducido nombres.';
+            }
+        }
+
+        function collectNames() {
+            let playerNames = '';
+            
+            for (let i = 0; i < 5; i++) {
+                const name = prompt('Ingrese el nombre del jugador ' + (i + 1) + ':');
+                
+                if (name) {
+                    playerNames += name;
+                    if (i < 4) {
+                        playerNames += ', ';
+                    }
+                } else {
+                    alert('Por favor, ingrese un nombre válido.');
+                    i--; // Decrementar i para repetir el prompt en caso de entrada inválida
+                }
+            }
+
+            displayNames(playerNames);
+        }
+
+        function displayNames(names) {
+            const resultElement = document.getElementById('result');
+            resultElement.innerText = 'Nombres de los jugadores: ' + names;
+        }
+    </script>
+</body>
+</html>

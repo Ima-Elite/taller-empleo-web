@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en Movimiento</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image {
+            width: 50%;
+            position: absolute;
+            transition: transform 1s;
+        }
+
+        #image1 {
+            animation: moveRight 2s infinite alternate;
+        }
+
+        #image2 {
+            animation: moveLeft 2s infinite alternate;
+        }
+
+        @keyframes moveRight {
+            from {
+                transform: translateX(-25%);
+            }
+            to {
+                transform: translateX(25%);
+            }
+        }
+
+        @keyframes moveLeft {
+            from {
+                transform: translateX(25%);
+            }
+            to {
+                transform: translateX(-25%);
+            }
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="espania.jpg" alt="Imagen 1" class="image" id="image1">
+        <img src="ingla.jpg" alt="Imagen 2" class="image" id="image2">
+    </div>
+</body>
+</html>

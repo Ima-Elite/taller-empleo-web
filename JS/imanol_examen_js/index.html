@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="restaurante, carta, menú, comida, bebidas, postres">
+    <link rel="icon" href="img/favi.ico" type="image/x-icon">
+    <title>IMA BURGER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo-portada.png" alt="logo-portada" class="logo-portada">
+    </header>
+    <main>
+        <div class="contenedor-menu">
+            <h1>
+                Nuestra carta
+            </h1>
+            <form id="formulario-menu">
+                <div class="seccion-menu">
+                    <h2>Entradas</h2>
+                    <div class="item-menu">
+                        <img src="img/ensalada.jpg" alt="Ensalada César">
+                        <input type="checkbox" id="ensalada-cesar" name="ensalada-cesar" data-precio="13">&nbsp;
+                        <label for="ensalada-cesar">Ensalada César - <span class="naranjta">13&nbsp;€</span></label>
+                        <input type="number" name="cantidad-ensalada-cesar" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/sopa.jpg" alt="Sopa de Tomate">
+                        <input type="checkbox" id="sopa-tomate" name="sopa-tomate" data-precio="2"> &nbsp;
+                        <label for="sopa-tomate">Sopa de Tomate - <span class="naranjta">2&nbsp;€</span></label>
+                        <input type="number" name="cantidad-sopa-tomate" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/bruschetta.jpg" alt="Bruschetta">
+                        <input type="checkbox" id="bruschetta" name="bruschetta" data-precio="3">&nbsp;
+                        <label for="bruschetta">Bruschetta - <span class="naranjta">3&nbsp;€</span></label>
+                        <input type="number" name="cantidad-bruschetta" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Platos Principales</h2>
+                    <div class="item-menu">
+                        <img src="img/carbonara.jpg" alt="Pasta Carbonara">
+                        <input type="checkbox" id="pasta-carbonara" name="pasta-carbonara" data-precio="5">&nbsp;
+                        <label for="pasta-carbonara">Pasta Carbonara - <span class="naranjta">5&nbsp;€</span></label>
+                        <input type="number" name="cantidad-pasta-carbonara" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/pizza.jpg" alt="Pizza Margarita">
+                        <input type="checkbox" id="pizza-margarita" name="pizza-margarita" data-precio="6">&nbsp;
+                        <label for="pizza-margarita">Pizza Margarita - <span class="naranjta">6&nbsp;€</span></label>
+                        <input type="number" name="cantidad-pizza-margarita" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/pollo.jpg" alt="Pollo al Curry">
+                        <input type="checkbox" id="pollo-curry" name="pollo-curry" data-precio="7">&nbsp;
+                        <label for="pollo-curry">Pollo al Curry - <span class="naranjta">7&nbsp;€</span></label>
+                        <input type="number" name="cantidad-pollo-curry" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Acompañamientos</h2>
+                    <div class="item-menu">
+                        <img src="img/patatas-fritas-perfectas.jpg" alt="Papas Fritas">
+                        <input type="checkbox" id="papas-fritas" name="papas-fritas" data-precio="8">&nbsp;
+                        <label for="papas-fritas">Papas Fritas - <span class="naranjta">7&nbsp;€</span></label>
+                        <input type="number" name="cantidad-papas-fritas" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/verduras.jpg" alt="Verduras Asadas">
+                        <input type="checkbox" id="verduras-asadas" name="verduras-asadas" data-precio="9">&nbsp;
+                        <label for="verduras-asadas">Verduras Asadas - <span class="naranjta">9&nbsp;€</span></label>
+                        <input type="number" name="cantidad-verduras-asadas" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/arroz-blanco-perfecto.jpg" alt="Arroz Blanco">
+                        <input type="checkbox" id="arroz-blanco" name="arroz-blanco" data-precio="11">&nbsp;
+                        <label for="arroz-blanco">Arroz Blanco - <span class="naranjta">11&nbsp;€</span></label>
+                        <input type="number" name="cantidad-arroz-blanco" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Bebidas</h2>
+                    <div class="item-menu">
+                        <img src="img/mineral.jpg" alt="Agua Mineral">
+                        <input type="checkbox" id="agua-mineral" name="agua-mineral" data-precio="44">&nbsp;
+                        <label for="agua-mineral">Agua Mineral - <span class="naranjta">44&nbsp;€</span></label>
+                        <input type="number" name="cantidad-agua-mineral" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/refreswco.jpg" alt="Refresco">
+                        <input type="checkbox" id="refresco" name="refresco" data-precio="16">&nbsp;
+                        <label for="refresco">Refresco (Coca-Cola, Sprite) - <span class="naranjta">16&nbsp;€</span></label>
+                        <input type="number" name="cantidad-refresco" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/cerveza.jpg" alt="Cerveza Artesanal">
+                        <input type="checkbox" id="cerveza-artesanal" name="cerveza-artesanal" data-precio="32">&nbsp;
+                        <label for="cerveza-artesanal">Cerveza Artesanal - <span class="naranjta">32&nbsp;€</span></label>
+                        <input type="number" name="cantidad-cerveza-artesanal" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/vino.jpg" alt="Vino Tinto">
+                        <input type="checkbox" id="vino-tinto" name="vino-tinto" data-precio="1">&nbsp;
+                        <label for="vino-tinto">Vino Tinto - <span class="naranjta">1&nbsp;€</span></label>
+                        <input type="number" name="cantidad-vino-tinto" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Postres</h2>
+                    <div class="item-menu">
+                        <img src="img/tiramisu.jpg" alt="Tiramisú">
+                        <input type="checkbox" id="tiramisu" name="tiramisu" data-precio="2">&nbsp;
+                        <label for="tiramisu">Tiramisú - <span class="naranjta">2&nbsp;€</span></label>
+                        <input type="number" name="cantidad-tiramisu" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/helado_cremoso.jpg" alt="Helado de Vainilla">
+                        <input type="checkbox" id="helado-vainilla" name="helado-vainilla" data-precio="5">&nbsp;
+                        <label for="helado-vainilla">Helado de Vainilla - <span class="naranjta">5&nbsp;€</span></label>
+                        <input type="number" name="cantidad-helado-vainilla" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/tarta-de-manzana.jpg" alt="Tarta de Manzana">
+                        <input type="checkbox" id="tarta-manzana" name="tarta-manzana" data-precio="1">&nbsp;
+                        <label for="tarta-manzana">Tarta de Manzana - <span class="naranjta">1&nbsp;€</span></label>
+                        <input type="number" name="cantidad-tarta-manzana" min="0" value="0">
+                    </div>
+                </div>
+            </form>
+            <div  class="total-precio">
+
+                Precio Total: &nbsp;
+
+                <span id="total-precio">0&nbsp;€</span>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo-portada.png" alt="logo-portada" class="logo-portada">
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

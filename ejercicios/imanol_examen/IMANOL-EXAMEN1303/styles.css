@@ -1,0 +1,78 @@
+body {
+    background-color: antiquewhite;
+    margin: 5px;
+    text-align: center;
+}
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+}
+h1{
+    color: #0056b3;
+}
+main p {
+    font-family: 'Hind', sans-serif;
+    color: #0056b3;
+    width: 60%;
+    margin: 0 auto;
+}
+img{
+    width: 40%;
+    border-radius: 5%;
+}
+ul{
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+li{
+    color: #0056b3;
+}
+.button-link {
+    margin: 2%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #0b4079;
+}
+/*colorines*/
+.header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.header p {
+    font-size: 16px;
+    margin: 10px 0 0;
+    color: white;
+}
+
+footer{
+    background-color: #0056b3;
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header img{
+    width: 70px;
+    margin-bottom: 10px;
+}

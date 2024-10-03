@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Tienda de Zapatillas</title>
+    <style>
+        footer p {
+            background-color: brown;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 5%;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Tienda de Zapatillas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Página de Producto -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="jj.jpg" class="img-fluid" alt="Zapatillas Deportivas">
+        </div>
+        <div class="col-md-6">
+          <h2>Zapatillas Deportivas XYZ</h2>
+          <p>Zapatillas J'hayber Hombre New Olimpo Deportivo Cómodo Piel Indigo. J'Hayber</p>
+          <form>
+            <div class="form-group">
+              <label for="talla">Talla</label>
+              <select class="form-control" id="talla">
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="color">Color</label>
+              <select class="form-control" id="color">
+                <option>Negro</option>
+                <option>Blanco</option>
+                <option>Rojo</option>
+                <option>Azul</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <select class="form-control" id="cantidad">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  
+    <footer>
+        <p>Zapatillas</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

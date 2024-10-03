@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Botín de Santander</title>
+    <style>
+        /* Tipografías importadas desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #004d60;
+        }
+
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section:nth-child(even) {
+            background-color: #e3f2fd;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #bbdefb;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            font-family: 'Oswald', sans-serif;
+            color: #00264d;
+        }
+
+        .two-columns, .three-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .two-columns div, .three-columns div {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 5px;
+            flex: 1;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .three-columns div {
+            flex-basis: 32%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .cta {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #004080;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+               
+        .equipo {
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Centro Botín de Santander</h1>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#exposiciones">Exposiciones</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#centro">El Centro</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section class="section" id="inicio">
+        <h2>Inicio</h2>
+        <div class="two-columns">
+            <div>
+                <p>Bienvenidos al Centro Botín, un espacio dedicado a la difusión del arte y la cultura en Santander. Descubre nuestras exposiciones, eventos y más.</p>
+            </div>
+            <div>
+                <img src="img/01.jpg" alt="Imagen del Centro Botín - Inicio">
+                <p>Imagen destacada del Centro Botín</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="exposiciones">
+        <h2>Exposiciones</h2>
+        <div class="three-columns">
+            <div>
+                <img src="img/02.jpg" alt="Exposición Actual">
+                <p><strong>Exposición Actual:</strong> Título de la exposición</p>
+            </div>
+            <div>
+                <img src="img/03.jpg" alt="Exposición Futura">
+                <p><strong>Exposición Futura:</strong> Avance de la próxima exposición</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="actividades">
+        <h2>Actividades</h2>
+        <div class="two-columns">
+            <div>
+                <h3>Talleres</h3>
+                <p>Participa en nuestros talleres para todas las edades. Desde arte hasta tecnología, ofrecemos una variedad de actividades educativas.</p>
+                <img src="img/05.jpg" alt="Talleres en el Centro Botín">
+                <p>Imagen de uno de nuestros talleres</p>
+            </div>
+            <div>
+                <h3>Conferencias y Charlas</h3>
+                <p>Asiste a nuestras charlas y conferencias impartidas por expertos en diversos campos. ¡No te lo pierdas!</p>
+                <img src="img/06.jpg" alt="Conferencias y Charlas">
+                <p>Imagen de una conferencia reciente</p>
+            </div>
+        </div>
+        <div class="two-columns">
+            <div>
+                <h3>Conciertos y Espectáculos</h3>
+                <p>Disfruta de conciertos y espectáculos en vivo en el Centro Botín. Consulta nuestra programación y reserva tus entradas.</p>
+                <img src="img/07.jpg" alt="Conciertos y Espectáculos">
+                <p>Imagen de un concierto en el Centro Botín</p>
+            </div>
+            <div>
+                <h3>Programas Educativos</h3>
+                <p>Explora nuestros programas educativos diseñados para escuelas y grupos. Descarga recursos y planifica tu visita.</p>
+                <img src="img/08.jpg" alt="Programas Educativos">
+                <p>Imagen de un programa educativo en acción</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="centro">
+        <h2>El Centro</h2>
+        <div class="three-columns">
+            <div>
+                <h3>Historia y Misión</h3>
+                <p>Conoce la historia del Centro Botín y nuestra misión de promover el arte y la cultura en la comunidad.</p>
+                <img src="img/historia.jpg" alt="Historia y Misión del Centro Botín">
+                <p>Imagen representativa de la historia del centro</p>
+            </div>
+            <div>
+                <h3>Arquitectura</h3>
+                <p>Descubre el diseño arquitectónico del Centro Botín, obra del renombrado arquitecto Renzo Piano.</p>
+                <img src="img/10.jpg" alt="Arquitectura del Centro Botín">
+                <p>Imagen del diseño arquitectónico del centro</p>
+            </div>
+            <div>
+                <h3>Equipo</h3>
+                <p>Conoce a las personas que hacen posible el funcionamiento del Centro Botín, desde curadores hasta directivos.</p>
+                <img src="img/11.jpg" alt="Equipo del Centro Botín" class="equipo">
+                <p>Imagen del equipo del centro</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="visita">
+        <h2>Visita</h2>
+        <div class="two-columns">
+            <div>
+                <h3>Horarios y Tarifas</h3>
+                <p>Consulta los horarios de apertura y las tarifas de entrada al Centro Botín. ¡Planifica tu visita con antelación!</p>
+                <img src="img/12.jpg" alt="Horarios y Tarifas">
+                <p>Imagen de los horarios del centro</p>
+            </div>
+            <div>
+                <h3>Ubicación</h3>
+                <p>Encuentra nuestra ubicación en el corazón de Santander y cómo llegar utilizando diferentes medios de transporte.</p>
+                <img src="img/13.jpg" alt="Ubicación del Centro Botín">
+                <p>Mapa de ubicación del Centro Botín</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Centro Botín de Santander. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

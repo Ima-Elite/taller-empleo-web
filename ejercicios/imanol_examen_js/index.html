@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="empresa de reformas, reformas integrales, reformas de viviendas, reformas de baños, reformas de cocinas, reformas de oficinas, reformas comerciales, rehabilitación de edificios, reformas de interiores, diseño de interiores, renovación de casas, empresa de construcción, reformas de locales">
+    <meta name="description" content="Empresa de reformas integrales en viviendas y locales comerciales. Ofrecemos servicios de alta calidad en reformas de baños, cocinas, oficinas y más. Contáctanos para un presupuesto gratuito.">
+    <meta name="author" content="Imanol Osuna">
+    <link rel="icon" href="img/logo_limpio.ico" type="image/x-icon">
+    <title>MANOLO Y COMPAÑIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+        body {
+            font-family: 'Comic Neue', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5e9d9;
+            font-size: 20px;
+            background-image: url('img/fondo.jpg'); 
+        }
+        header, footer {
+            background-color: #e6a52c;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor-menu {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #e6a52c;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .seccion-menu {
+            margin-bottom: 20px;
+        }
+        .seccion-menu h2 {
+            margin-bottom: 10px;
+        }
+        .item-menu {
+            display: flex;
+            align-items: center;
+            margin: 30px;
+        }
+        .item-menu img {
+            width: 100px;
+            height: 100px;
+            border: 3px solid #e6a52c;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .item-menu label {
+            flex-grow: 1;
+        }
+        .item-menu input[type="number"] {
+            width: 50px;
+            margin-left: 10px;
+        }
+        .total-precio {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #e6a52c;
+        }
+        #total-precio {
+            color: #e6a52c;
+        }
+        .logo-portada {
+            width: 20%;
+        }
+        footer  .logo-portada{
+            width: 10%;
+        }
+
+        .total-precio, #total-precio {
+            text-align: center;
+        }
+        /*input number*/
+        .item-menu input[type="number"] {
+            width: 80px;
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #e6a52c;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .item-menu input[type="checkbox"] {
+            width: 25px; 
+            height: 25px; 
+            border: 3px solid #e6a52c; 
+            border-radius: 5px; 
+            margin-right: 10px; 
+        }
+
+        .naranjta{
+            color: #e6a52c;
+            font-weight: bold;
+        }
+        header img {
+            border-radius: 12px;
+            border-color: #e6a52c;
+        }
+        .logo-form {
+            text-align: center;
+            border-radius: 36px;
+        }
+        footer img {
+            border-radius: 12px;
+        }
+        .total-precio {
+            margin-top: 50px;
+        }
+        .aplicado-descuento {
+            color: green;
+        }
+
+        #span-verde {
+            color: green;
+        }
+
+        .verdosillo {
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .verdoso {
+            color: green;
+            font-weight: bold;
+        }
+        #img_descuento {
+            border-color: green;
+        }
+        .logo-portada1 {
+            height: 120px;
+            margin-top: 5px;
+        }
+        .logo-form {
+            border: 1px solid #e6a52c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+      <img src="img/manolo_cia_benit.jpg" alt="logo-portada" class="logo-portada1">
+    </header>
+
+    <main>
+        <div class="contenedor-menu">
+            <h1>
+                Reformas en General
+            </h1>
+            <img src="img/manolo_cia.jpg" alt="logo-portada" class="logo-form">
+
+            <form id="formulario-menu">
+                <div class="seccion-menu">
+                    <h2>Cocina</h2>
+                    <div class="item-menu">
+                        <img src="img/pintar_paredes.jpg" alt="pintar_paredes">
+                        <input type="checkbox" id="pintar_paredes" name="pintar_paredes" data-precio="11">&nbsp;
+                        <label for="ensalada-cesar">Pintar Paredes - <span class="naranjta">11&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-ensalada-cesar" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/azulejos.jpg" alt="azulejos">
+                        <input type="checkbox" id="azulejos" name="azulejos" data-precio="2"> &nbsp;
+                        <label for="sopa-tomate">Cambiar Azulejos - <span class="naranjta">2&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-sopa-tomate" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/muebles.jpg" alt="muebles">
+                        <input type="checkbox" id="muebles" name="muebles" data-precio="3">&nbsp;
+                        <label for="bruschetta">Instalación de Muebles - <span class="naranjta">3&nbsp;€ la Unidad</span></label>
+                        <input type="number" name="cantidad-bruschetta" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Baño</h2>
+                    <div class="item-menu">
+                        <img src="img/pintar_paredes.jpg" alt="pintar_paredes">
+                        <input type="checkbox" id="pintar_paredes" name="pintar_paredes" data-precio="15">&nbsp;
+                        <label for="pasta-carbonara">Pintar Paredes - <span class="naranjta">15&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-pasta-carbonara" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/azulejos.jpg" alt="azulejos">
+                        <input type="checkbox" id="azulejos" name="azulejos" data-precio="16">&nbsp;
+                        <label for="pizza-margarita">Cambiar Azulejos - <span class="naranjta">16&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-pizza-margarita" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/taza.jpg" alt="taza">
+                        <input type="checkbox" id="taza" name="taza" data-precio="1700">&nbsp;
+                        <label for="pollo-curry">Instalación de Sanitario - <span class="naranjta">1700&nbsp;€ cada Uno</span></label>
+                        <input type="number" name="cantidad-pollo-curry" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Salón</h2>
+                    <div class="item-menu">
+                        <img src="img/paredes_obra.jpg" alt="paredes_obra">
+                        <input type="checkbox" id="pared" name="pared" data-precio="17">&nbsp;
+                        <label for="papas-fritas">Pintar Paredes - <span class="naranjta">17&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-papas-fritas" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/laminado.jpg" alt="laminado">
+                        <input type="checkbox" id="laminado" name="laminado" data-precio="19">&nbsp;
+                        <label for="verduras-asadas">Suelo Laminado - <span class="naranjta">19&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-verduras-asadas" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/empotrado.jpg" alt="empotrado">
+                        <input type="checkbox" id="empotrado" name="empotrado" data-precio="111">&nbsp;
+                        <label for="arroz-blanco">Armario Empotrado - <span class="naranjta">111&nbsp;€ la Unidad</span></label>
+                        <input type="number" name="cantidad-arroz-blanco" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Dormitorio</h2>
+                    <div class="item-menu">
+                        <img src="img/pintar_paredes.jpg" alt="pintar_paredes">
+                        <input type="checkbox" id="pintar_paredes" name="pintar_paredes" data-precio="44">&nbsp;
+                        <label for="agua-mineral">Pintar Paredes - <span class="naranjta">44&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-agua-mineral" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/laminado.jpg" alt="laminado">
+                        <input type="checkbox" id="laminado" name="laminado" data-precio="11">&nbsp;
+                        <label for="refresco">Suelo Laminado - <span class="naranjta">11&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-refresco" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/empotrado.jpg" alt="empotrado">
+                        <input type="checkbox" id="empotrado" name="empotrado" data-precio="315">&nbsp;
+                        <label for="cerveza-artesanal">Instalación Armario - <span class="naranjta">315&nbsp;€ la Unidad</span></label>
+                        <input type="number" name="cantidad-cerveza-artesanal" min="0" value="0">
+                    </div>
+                </div>
+
+                <div class="seccion-menu">
+                    <h2>Extras</h2>
+                    <div class="item-menu">
+                        <img src="img/led.jpg" alt="led">
+                        <input type="checkbox" id="led" name="led" data-precio="22">&nbsp;
+                        <label for="tiramisu">Illuminación LED - <span class="naranjta">22&nbsp;€ el m<sup>2</sup></span></label>
+                        <input type="number" name="cantidad-tiramisu" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/modo-heat-aire-acondicionado.jpg" alt="aire-acondicionado">
+                        <input type="checkbox" id="acondicionado" name="acondicionado" data-precio="1800">&nbsp;
+                        <label for="helado-vainilla">Aire Acondicionado - <span class="naranjta">1800&nbsp;€ por Instalación</span></label>
+                        <input type="number" name="cantidad-helado-vainilla" min="0" value="0">
+                    </div>
+                    <div class="item-menu">
+                        <img src="img/ventanas.jpg" alt="ventanas">
+                        <input type="checkbox" id="ventanas" name="ventanas" data-precio="1500">&nbsp;
+                        <label for="tarta-manzana">Renovación de Ventanas - <span class="naranjta">1500&nbsp;€ cada Una</span></label>
+                        <input type="number" name="cantidad-tarta-manzana" min="0" value="0">
+                    </div>
+                </div>
+                
+                <div class="seccion-menu">
+                    <h2 class="verdoso">Descuentos</h2>
+                    <div class="item-menu">
+                        <img src="img/descuento.jpg" alt="descuento" id="img_descuento">
+                        <input type="checkbox" id="miCheckbox_ima" name="miCheckbox_ima" data-precio="-1">&nbsp;
+                        <label for="descuento">Elija su Descuento en <span class="verdosillo">€</span></label>
+                        <input type="number" name="cantidad-tiramisu" id="cantidad_de_Descuento" min="0" value="0">
+                    </div>
+               
+                </div>
+            </form>
+
+            <div  class="total-precio">
+
+                Precio Total: &nbsp;
+
+                <span id="total-precio">0&nbsp;€</span><br>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/logo_limpio.jpg" alt="logo-portada" class="logo-portada">
+    </footer>
+
+    <script>
+        var formularioMenu = document.getElementById('formulario-menu');
+        var totalPrecioDiv = document.getElementById('total-precio');
+
+        formularioMenu.addEventListener('change', () => {
+            let total = 0;
+
+            var itemsMenu = formularioMenu.querySelectorAll('.item-menu');
+
+            itemsMenu.forEach(item => {
+                var checkbox = item.querySelector('input[type="checkbox"]');
+                var cantidadInput = item.querySelector('input[type="number"]');
+
+                if (checkbox.checked) {
+                    var precio = parseFloat(checkbox.getAttribute('data-precio'));
+                    var cantidad = parseInt(cantidadInput.value, 10);
+                    total += precio * cantidad;
+                }
+            });
+
+            if(total< 0){
+                total=0;
+            }
+
+            /*Descuento*/
+
+            var checkbox = document.getElementById("miCheckbox_ima");
+
+            if (checkbox.checked ) {
+
+                var descuento_cantidad = document.getElementById("cantidad_de_Descuento").value;
+
+                totalPrecioDiv.innerHTML = `${total}<span>&nbsp;</span>€ - <span id='span-verde'>( Aplicando un Descuento de ${descuento_cantidad} € )</span>`;
+
+            }else{
+                totalPrecioDiv.innerHTML = `${total}<span>&nbsp;</span>€`;
+            } 
+
+           
+        });
+    </script>
+</body>
+</html>

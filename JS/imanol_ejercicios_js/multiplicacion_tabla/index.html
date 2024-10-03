@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        label, input, button {
+            margin: 5px;
+        }
+        .rojilla{
+            background-color: rgb(197, 125, 125);
+        }
+        .azulito{
+            background-color: rgb(83, 83, 110);
+        }
+    </style>
+</head>
+<body>
+    <div id="bajar"></div>
+
+    <h1>Generador de Tablas de Multiplicar</h1>
+
+    <label for="numberInput">Introduce un número del 1 al 100: </label>
+
+    <input type="number" id="numberInput" min="1" max="100">
+
+    <button onclick="generateTable()">Generar Tabla</button>
+
+    <div id="result"></div>
+
+    <script>
+
+        function generateTable() {
+
+            let num = parseInt(document.getElementById('numberInput').value);
+
+
+            let tableHTML = '<table><tr><th>Multiplicador</th><th>Resultado</th></tr>';
+
+            for (let i = 1; i <= 10; i++) {
+
+                if (i % 2 === 0) {
+
+                    tableHTML += `<tr><td class='rojilla'>${num} x ${i}</td><td class='rojilla'>${num * i}</td></tr>`;
+               
+                }else{
+                    tableHTML += `<tr><td class='azulito'>${num} x ${i}</td><td class='azulito'>${num * i}</td></tr>`;
+                } 
+
+                
+                
+            }
+
+            tableHTML += '</table><br><br><br><br>';
+
+            document.getElementById('result').innerHTML = tableHTML;
+
+            document.getElementById('bajar').innerHTML = "<br><br><br><br><br><br><br><br>";
+
+        }
+
+    </script>
+</body>
+</html>

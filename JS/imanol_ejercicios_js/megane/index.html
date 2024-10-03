@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENAULT Megane COUPE</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+        }
+
+        nav ul ul li {
+            width: 200px;
+        }
+
+        nav ul ul li a {
+            padding: 8px 16px;
+            text-align: left;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .seccion {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+
+        .seccion:nth-child(odd) {
+            background-color: #c9be2f;
+        }
+
+        .seccion:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a>
+                    <ul>
+                        <li><a href="#">Submenú 1</a></li>
+                        <li><a href="#">Submenú 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Modelos</a>
+                    <ul>
+                        <li><a href="#">Megane</a></li>
+                        <li><a href="#">Clio</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#">Mantenimiento</a></li>
+                        <li><a href="#">Reparación</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a>
+                    <ul>
+                        <li><a href="#">Teléfono</a></li>
+                        <li><a href="#">Correo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="seccion" id="seccion1">
+            <h1>Sección 1</h1>
+        </div>
+        <div class="seccion" id="seccion2">
+            <h1>Sección 2</h1>
+        </div>
+        <div class="seccion" id="seccion3">
+            <h1>Sección 3</h1>
+        </div>
+    </main>
+    <footer>
+        <p>RENAULT Megane COUPE</p>
+    </footer>
+
+    <script>
+        document.addEventListener('wheel', (event) => {
+            const delta = Math.sign(event.deltaY);
+            const sections = document.querySelectorAll('.seccion');
+            const currentSection = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2).closest('.seccion');
+
+            let nextSection;
+            if (delta > 0) {
+                nextSection = currentSection.nextElementSibling;
+            } else if (delta < 0) {
+                nextSection = currentSection.previousElementSibling;
+            }
+
+            if (nextSection && nextSection.classList.contains('seccion')) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
